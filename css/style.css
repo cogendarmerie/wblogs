@@ -1,0 +1,239 @@
+:root
+{
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+
+    /*primary*/
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+}
+
+@font-face
+{
+    font-family: "Inter";
+    src: url('../assets/fonts/static/Inter-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: "Inter-Bold";
+    src: url('../assets/fonts/static/Inter-Bold.ttf');
+}
+
+@font-face
+{
+    font-family: "Inter-ExtraBold";
+    src: url('../assets/fonts/static/Inter-ExtraBold.ttf');
+}
+
+body
+{
+    margin: 0rem;
+    font-family: "Inter";
+    background-color: var(--Off-white);
+    padding: 120px 150px;
+}
+
+p
+{
+    font-size: 15px;
+    color: var(--Grayish-blue);
+}
+
+.btn-prm
+{
+    text-decoration: none;
+    color: white;
+    background-color: var(--Soft-red);
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: all .25s ease;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: "Inter";
+    font-size: 14px;
+}
+
+.btn-prm:hover
+{
+    background-color: var(--Very-dark-blue);
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav > div
+{
+    display: flex;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .25s ease;
+}
+
+nav a:hover
+{
+    color: var(--Soft-red);
+}
+
+nav a:not(:first-child)
+{
+    margin-left: 16px;
+}
+
+main
+{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*section*/
+main section:first-child
+{
+    width: 60%;
+}
+
+main section:first-child img
+{
+    width: 100%;
+}
+
+main > section:first-child h1
+{
+    font-family: "Inter-ExtraBold";
+    font-size: 50px;
+}
+
+main > section:first-child > div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main > section:first-child > div > div:first-child
+{
+    width: 40%;
+}
+
+main > section:first-child > div > div:nth-child(2)
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*fin section*/
+
+
+/*aside*/
+aside
+{
+    background-color: var(--Very-dark-blue);
+    color: white;
+    margin-left: 32px;
+    padding: 4px 32px;
+    width: 25%;
+}
+
+aside h2
+{
+    color: var(--Soft-orange);
+    font-family: "Inter-Bold";
+    font-size: 42px;
+    font-weight: normal;
+}
+
+aside h3
+{
+    font-weight: normal;
+    font-family: "Inter-Bold";
+}
+aside div:not(:last-child)
+{
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+/*fin aside*/
+
+/*section bottom*/
+body > section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+body > section > article
+{
+    display: flex;
+    flex-direction: row;
+}
+
+body > section > article > div:first-child
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 140px;
+    width: 140px;
+}
+
+body > section > article:first-child > div:first-child
+{
+    background-image: url('../assets/images/image-retro-pcs.jpg');
+}
+
+body > section > article:nth-child(2) > div:first-child
+{
+    background-image: url('../assets/images/image-top-laptops.jpg');
+}
+
+body > section > article:nth-child(3) > div:first-child
+{
+    background-image: url('../assets/images/image-gaming-growth.jpg');
+}
+
+body > section > article > div:nth-child(2)
+{
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body > section > article > div:nth-child(2) p:first-child
+{
+    font-family: "Inter-Bold";
+    font-size: 32px;
+    margin: 0;
+}
+
+body > section > article > div:nth-child(2) h3
+{
+    font-family: "Inter-ExtraBold";
+    font-size: 16px;
+    margin: 0;
+    margin-top: 8px;
+}
+
+body > section > article > div:nth-child(2) p:last-child
+{
+    color: var(--Dark-grayish-blue);
+}
+/*fin section bottom*/
